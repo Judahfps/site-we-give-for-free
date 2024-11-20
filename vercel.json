@@ -1,9 +1,6 @@
 {
-  "version": 2,
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ]
+  "build": {
+    "command": "npx tailwindcss -i input.css -o output.css"
+  },
+  "output": "dist"
 }
