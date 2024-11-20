@@ -1,6 +1,6 @@
 {
   "build": {
     "command": "npx tailwindcss -i input.css -o output.css"
-  },
-  "output": "dist"
+  }
+  
 }
