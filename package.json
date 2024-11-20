@@ -1,15 +1,15 @@
 {
-  "name": "site_projeto",
+  "name": "projeto",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./styles/style.css -o ./styles/output.css --watch",
-    "build": "tailwindcss build src/styles.css -o dist/styles.css"
+    "build": "mkdir -p public && npx tailwindcss -i ./styles/style.css -o ./public/output.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "devDependencies": {
     "tailwindcss": "^3.4.15"
   }
