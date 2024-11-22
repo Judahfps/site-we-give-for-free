@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -202,7 +202,7 @@
       </ul>
     </header>
     
-    <form autocomplete="off" class="sm:w-full lg:px-6 font-bold">
+    <form autocomplete="off" id="form" class="sm:w-full lg:px-6 font-bold">
         <fieldset class="sm:w-full m-auto lg:w-4/6 mt-16 border-2 border-slate-700 bg-slate-300">
           
           <legend class="lg:ml-6 px-2 text-gray-600">Dados da Instituição</legend>
@@ -211,35 +211,35 @@
             <div class="sm:col-span-4 mx-1">
               <label for="first-name" class="block text-sm font-medium leading-6 text-gray-600">Razão Social</label>
               <div class="mt-2 sm:w-full">
-                <input autocomplete="off" type="text" id="first-name" class="block w-full lg:w-3/6 rounded-md border-0 py-1.5 text-gray-600 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 bg-slate-300 pl-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <input autocomplete="off" type="text" id="razao" class="block w-full lg:w-3/6 rounded-md border-0 py-1.5 text-gray-600 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 bg-slate-300 pl-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               </div>
             </div>
     
             <div class="sm:col-span-1 mt-2 mx-1">
               <label for="first-name" class="block text-sm font-medium leading-6 text-gray-600">Nome Responsavél</label>
               <div class="mt-2">
-                <input autocomplete="off" type="text" id="first-name" class="block w-full lg:w-3/6 rounded-md border-0 py-1.5 text-gray-400 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 bg-slate-300 pl-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <input autocomplete="off" type="text" id="nome" class="block w-full lg:w-3/6 rounded-md border-0 py-1.5 text-gray-400 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 bg-slate-300 pl-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               </div>
             </div>
     
             <div class="sm:col-span-1 mt-2 mx-1">
               <label for="first-name" class="block text-sm font-medium leading-6 text-gray-600">Quantidade de Jovens</label>
               <div class="mt-2">
-                <input autocomplete="off" type="number" id="first-name" class="block w-full lg:w-2/5 rounded-md border-0 py-1.5 text-gray-400 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 bg-slate-300 pl-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <input autocomplete="off" type="number" id="jovens" class="block w-full lg:w-2/5 rounded-md border-0 py-1.5 text-gray-400 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 bg-slate-300 pl-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               </div>
             </div>
     
             <div class="sm:col-span-1 mt-2 mx-1">
               <label for="first-name" class="block text-sm font-medium leading-6 text-gray-600">Endereço</label>
               <div class="mt-2">
-                <input autocomplete="off" type="text" id="first-name" class="block w-full lg:w-2/5 rounded-md border-0 py-1.5 text-gray-400 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 bg-slate-300 pl-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <input autocomplete="off" type="text" id="logradouro" class="block w-full lg:w-2/5 rounded-md border-0 py-1.5 text-gray-400 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 bg-slate-300 pl-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               </div>
             </div>
     
             <div class="sm:col-span-1-span-1 mt-2 mx-1">
               <label for="first-name" class="block text-sm font-medium leading-6 text-gray-600">Telefone</label>
               <div class="mt-2">
-                <input autocomplete="off" type="number" id="first-name" class="block w-full lg:w-2/5 rounded-md border-0 py-1.5 text-gray-400 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 bg-slate-300 pl-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <input autocomplete="off" type="number" id="tel" class="block w-full lg:w-2/5 rounded-md border-0 py-1.5 text-gray-400 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 bg-slate-300 pl-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               </div>
             </div>
     
@@ -247,28 +247,28 @@
               <div class="sm:col-span-1">
                 <label for="first-name" class="block text-sm font-medium leading-6 text-gray-600">Cidade</label>
                 <div class="mt-2">
-                  <input autocomplete="off" type="text" id="first-name" class="block w-full flex-col lg:w-full rounded-md border-0 py-1.5 text-gray-400 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 bg-slate-300 pl-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                  <input autocomplete="off" type="text" id="cidade" class="block w-full flex-col lg:w-full rounded-md border-0 py-1.5 text-gray-400 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 bg-slate-300 pl-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
               </div>
     
               <div class="sm:col-span-1 mx-1">
                 <label for="first-name" class="block text-sm font-medium leading-6 text-gray-600">UF</label>
                 <div class="mt-2">
-                  <input autocomplete="off" type="text" id="first-name" class="block w-full flex-col lg:w-full rounded-md border-0 py-1.5 text-gray-400 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 bg-slate-300 pl-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                  <input autocomplete="off" type="text" id="uf" class="block w-full flex-col lg:w-full rounded-md border-0 py-1.5 text-gray-400 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 bg-slate-300 pl-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
               </div>
     
               <div class="sm:col-span-1 mx-1">
                 <label for="first-name" class="block text-sm font-medium leading-6 text-gray-600">Cep</label>
                 <div class="mt-2">
-                  <input autocomplete="off" type="number" id="first-name" class="block w-full flex-col lg:w-full rounded-md border-0 py-1.5 text-gray-400 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 bg-slate-300 pl-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                  <input autocomplete="off" type="number" id="cep" class="block w-full flex-col lg:w-full rounded-md border-0 py-1.5 text-gray-400 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 bg-slate-300 pl-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
               </div>
     
             </div>
     
             <div class="flex justify-center my-5 w-full">
-              <button class="py-1.5 rounded-md w-4/5 lg:w-4/12 bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 duration-300">Enviar</button>
+              <button type="submit" class="py-1.5 rounded-md w-4/5 lg:w-4/12 bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 duration-300">Enviar</button>
             </div>
     
           </div>
