@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="/styles/output.css">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+      emailjs.init({
+        publicKey: "Drs4S5mzE0Hk4MQK9",
+      });
+   })();
+</script>
+
+
+    <title>Formulário Professor</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+</head>
+<body class="bg-gray-100">
+
+  
+    <!--Novo menu moblie-->
+    <header class="sm:hidden flex w-full justify-between bg-slate-900">
+      <div class="w-full flex justify-between py-5 ml-5">
+        <div class="flex items-center gap-5">
+          <a href="./index.html">
+            <img
+              src="./assets/imagem-1.jpeg"
+              alt="logo"
+              class="w-16 h-16 rounded-full"
+            />
+          </a>
+          <h1 class="text-gray-300 font-sans text-lg sm:text-2xl">
+            We Give For Free
+          </h1>
+        </div>
+        <div class="flex items-center">
+          <button
+            id="btn-open"
+            onclick="openMenu()"
+            class="inlinne-flex flex items-center justify-center mx-4 h-10 w-10 rounded-md border focus:outline-none border-gray-400 text-gray-400"
+          >
+            <svg
+              class="h-6 w-6"
+              data-slot="icon"
+              fill="none"
+              stroke-width="1.5"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </header>
+
+        <div
+          id="menu"
+          class="hidden absolute z-50 w-full flex-col px-3 py-2 bg-slate-600 shadow-xl"
+        >
+          <div class="flex justify-center items-center">
+            <button
+              id="btn-close"
+              onclick="closeMenu()"
+              class="text-3xl text-bold font-bold mt-4 m-auto text-slate-950"
+            >
+              X
+            </button>
+          </div>
+
+        <nav class="">
+
+            <ul
+              class="w-full flex flex-col mt-8 font-medium text-gray-400 gap-5 sm:gap-3 sm:mr-5"
+            >
+              <li class="">
+                <a
+                  href="./index.html"
+                  class="text-lg block sm:inline-block whitespace-nowrap hover:text-gray-100 duration-300"
+                  >Home</a
+                >
+              </li>
+
+              <li class="">
+                <a
+                  href="./formulario.html"
+                  class="text-lg block sm:inline-block whitespace-nowrap hover:text-gray-100 duration-300"
+                  >Cadastro</a
+                >
+              </li>
+    
+              <li>
+                <a
+                  href="#"
+                  class="text-lg block sm:inline-block whitespace-nowrap hover:text-gray-100 duration-300"
+                  >Sobre Nós</a
+                >
+              </li>
+            </ul>
+  
+          </div>
+        </nav>
+    <!--Fim novo menu moblie-->
+
+
+    <header class="hidden sm:flex w-full justify-between bg-slate-900">
+      <div class="w-full flex gap-5 items-center py-2 ml-5">
+        <a href="./index.html">
+          <img
+            src="./assets/imagem-1.jpeg"
+            alt="logo"
+            class="w-16 h-16 rounded-full"
+          />
+        </a>
+        <h1 class="text-gray-300 font-sans text-lg sm:text-xl">
+          We Give For Free
+        </h1>
+      </div>
+      <ul
+        class="flex w-2/4 items-center space-x-4 font-medium text-gray-400 gap-10 sm:gap-3 sm:mr-5"
+      >
+        <li class="">
+          <a
+            href="./index.html"
+            class="text-lg block sm:inline-block whitespace-nowrap hover:text-gray-100 duration-300"
+            >Home</a
+          >
+        </li>
+
+        <li class="">
+          <a
+            href="./formulario.html"
+            class="text-lg block sm:inline-block whitespace-nowrap hover:text-gray-100 duration-300"
+            >Cadastro</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="#"
+            class="text-lg block sm:inline-block whitespace-nowrap hover:text-gray-100 duration-300"
+            >Sobre Nós</a
+          >
+        </li>
+      </ul>
+    </header>
+    
+    <form id="form" autocomplete="off" class="flex items-center justify-center h-screen">
+
+
+      <div class="w-full sm:w-3/6 h-4/5 flex justify-center gap-5 bg-gray-200 flex-col border-2 rounded-lg">
+
+        <div class="w-full flex justify-center">
+          <input autocomplete="off" type="text" required placeholder="Nome completo" id="name" class="block w-full sm:w-4/5  rounded-md border-0 py-4
+           text-gray-600 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 pl-2 focus:outline-none 
+           focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        </div>
+
+        <div class="w-full flex justify-center">
+          <input autocomplete="off" type="text" required placeholder="Assunto" id="assunto" class="block w-full sm:w-4/5  rounded-md border-0 py-4
+           text-gray-600 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 pl-2 focus:outline-none 
+           focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        </div>
+
+        <div class="w-full flex justify-center">
+          <input autocomplete="off" type="email" required placeholder="Seu email" id="email" class="block w-full sm:w-4/5  rounded-md border-0 py-4
+           text-gray-600 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 pl-2 focus:outline-none 
+           focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        </div>
+
+
+        <div class="w-full flex justify-center">
+
+          <textarea cols="40" rows="10" placeholder="Digite a sua mensagem" required name="text" id="message" class="block w-full sm:w-4/5 rounded-md border-0
+          text-gray-600 shadow-sm ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 pl-2 focus:outline-none 
+          focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+        </div>
+
+        <div class="w-full flex justify-center">
+          <button type="submit" onclick="sendEmail()" id="btn-button" class="py-1.5 rounded-md w-4/5 bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 duration-300">Enviar</button>
+        </div>
+        <div id="content" class=" hidden w-full justify-center">
+          <div class="flex justify-center items-center border-2 border-green-500 w-full sm:w-4/5">
+            <span class="py-4"></span>
+              Mensagem enviada com sucesso!
+
+          </div>
+        </div>
+
+    </form>
+</body>
+<script src="./main.js"></script>
+</html>
+
