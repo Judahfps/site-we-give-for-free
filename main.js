@@ -1,4 +1,6 @@
 
+
+
 const form = document.getElementById('form');
 
 function sendEmail() {
@@ -17,3 +19,21 @@ function sendEmail() {
 }
 
 
+
+const menuMobile = document.getElementById('menu')
+const menuAbrir = document.getElementById('btn-open');
+const menuFechar = document.getElementById('btn-close')
+
+
+function openMenu(){
+  menuMobile.classList.remove('hidden')
+  menuMobile.classList.add('flex')
+
+}
+
+
+function closeMenu(){
+menuMobile.classList.remove('flex')
+menuMobile.classList.add('hidden')
+
+}
