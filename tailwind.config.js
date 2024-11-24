@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       backgroundImage:{
         'hero': "url('/assets/sessao1.jpg')",
-        'callaction': "url('/assets/sessao2.jpg')"
+        'callaction': "url('/assets/sessao2.jpg')",
+        'abrgigo': "url('/assets/abrigo.jpeg')",
       }
     },
   },

@@ -13,8 +13,10 @@ function sendEmail() {
   }
   
   emailjs.send("service_c8tcnl9", "template_nagnt4g", parms)
-    .then(alert("Email enviado com sucesso!"));
-    form.reset();
+    .then(() => {
+      alert("Email enviado com sucesso!");
+      form.reset();
+    });
 
 }
 
