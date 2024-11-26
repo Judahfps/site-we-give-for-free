@@ -659,6 +659,14 @@ video {
   height: 100vh;
 }
 
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -856,6 +864,10 @@ video {
 
 .bg-coracao {
   background-image: url('/assets/coracao.png');
+}
+
+.bg-action3 {
+  background-image: url('/assets/page.jpeg');
 }
 
 .bg-cover {

@@ -14,6 +14,7 @@ module.exports = {
         'coracao': "url('/assets/coracao.png')",
         'action': "url('https://www.apple.com/br/education/home/images/overview/spotlight_sisler__evj8rginc38m_large.jpg')",
         'action2': "url('/assets/bg.webp')",
+        'action3': "url('/assets/page.jpeg')",
       }
     },
   },
