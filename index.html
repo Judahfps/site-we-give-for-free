@@ -15,6 +15,10 @@
     />
 
     <link rel="stylesheet" href="/styles/output.css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
 
     <title>We Give For Free</title>
   </head>
@@ -93,7 +97,7 @@
 
               <li class="">
                 <a
-                  href="./formulario.html"
+                  href="#formularioRodape"
                   class="text-lg block sm:inline-block whitespace-nowrap hover:text-gray-100 duration-300"
                   >Cadastro</a
                 >
@@ -141,7 +145,7 @@
 
         <li class="">
           <a
-            href="./formulario.html"
+            href="#formularioRodape"
             class="text-lg block sm:inline-block whitespace-nowrap hover:text-gray-100 duration-300"
             >Cadastro</a
           >
@@ -367,7 +371,7 @@
       </div>
 
       <hr class="border-1 border-slate-800 mb-4" />
-      <div class="flex flex-col lg:flex-row lg:justify-between gap-2">
+      <div class="flex flex-col lg:flex-row lg:justify-between">
         <div class="flex flex-col gap-y-4">
           <div class="col-span-1">
             <p class="text-white flex gap-2 items-center text-xs">
@@ -392,8 +396,53 @@
           </div>
         </div>
 
-        <div class="">
-          <h3 class="text-white text-xs font-bold">Seguir a We Give For Free</h3>
+        <div id="formularioRodape" class="w-full">
+          <form id="contatoForm">
+            <div class="flex justify-center">
+              <input autocomplete="off" type="text" required placeholder="Nome completo" id="nome" 
+                     class="block w-full sm:w-96 bg-slate-900 rounded-md border-0 py-2 px-3 mt-3 text-gray-400 shadow-sm 
+                     ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 pl-3 focus:outline-none 
+                     focus:ring-2 focus:ring-inset focus:ring-blue-700 sm:text-sm sm:leading-6">
+            </div>
+            <div class="flex justify-center">
+              <input autocomplete="off" type="text" required placeholder="Assunto" id="assunto" 
+                     class="block w-full sm:w-96 bg-slate-900 rounded-md border-0 py-2 px-3 mt-3 text-gray-400 shadow-sm 
+                     ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 pl-3 focus:outline-none 
+                     focus:ring-2 focus:ring-inset focus:ring-blue-700 sm:text-sm sm:leading-6">
+            </div>
+            <div class="flex justify-center">
+              <input autocomplete="off" type="email" required placeholder="Seu email" id="email" 
+                     class="block w-full sm:w-96 bg-slate-900 rounded-md border-0 py-2 px-3 mt-3 text-gray-400 shadow-sm 
+                     ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 pl-3 focus:outline-none 
+                     focus:ring-2 focus:ring-inset focus:ring-blue-700 sm:text-sm sm:leading-6">
+            </div>
+            <div class="w-full flex justify-center">
+              <textarea cols="40" rows="10" placeholder="Digite a sua mensagem" required id="mensagem" 
+                        class="block w-full mt-3 sm:w-96 bg-slate-900 rounded-md border-0 text-gray-400 shadow-sm 
+                        ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 px-3 py-2 pl-3 focus:outline-none 
+                        focus:ring-2 focus:ring-inset focus:ring-blue-700 sm:text-sm sm:leading-6">
+              </textarea>
+            </div>
+            <div class="w-full flex justify-center">
+              <button type="submit" id="btn-button" 
+                      class="w-full py-1.5 rounded-md sm:w-96 mt-3 bg-blue-700 hover:bg-blue-800 active:bg-blue-900 
+                      focus:outline-none focus:ring focus:ring-blue-700 duration-300">
+                Enviar
+              </button>
+            </div>
+            
+            <div id="content" class="w-full flex justify-center">
+
+
+            </div>
+          </form>
+        </div>
+        
+
+        
+
+        <div class="mt-3 sm:m-0">
+            <h3 class="text-white text-xs font-bold whitespace-nowrap">Seguir a We Give For Free</h3>
           <div class="flex gap-5 py-3">
             <div class="col-span-1">
               <a href="#"

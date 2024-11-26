@@ -10,21 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <link rel="stylesheet" href="/styles/output.css">
-
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-      (function(){
-      emailjs.init({
-        publicKey: "Drs4S5mzE0Hk4MQK9",
-      });
-   })();
-</script>
-
-
     <title>Formulário</title>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     
 </head>
 <body class="bg-gray-100">
@@ -164,7 +151,7 @@
       </ul>
     </header>
     
-    <form id="form" autocomplete="off" class="flex items-center justify-center h-screen">
+    <form id="contatoForm" autocomplete="off" class="flex items-center justify-center h-screen">
 
 
       <div class="w-full sm:w-3/6 h-4/5 flex justify-center gap-5 bg-gray-200 flex-col border-2 rounded-lg">
@@ -196,7 +183,7 @@
         </div>
 
         <div class="w-full flex justify-center">
-          <button type="submit" onclick="sendEmail()" id="btn-button" class="py-1.5 rounded-md w-4/5 bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 duration-300">Enviar</button>
+          <button type="submit" id="btn-button" class="py-1.5 rounded-md w-4/5 bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 duration-300">Enviar</button>
         </div>
         <div id="content" class=" hidden w-full justify-center">
           <div class="flex justify-center items-center border-2 border-green-500 w-full sm:w-4/5">
