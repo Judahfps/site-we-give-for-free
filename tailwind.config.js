@@ -16,6 +16,7 @@ module.exports = {
         'action2': "url('/assets/bg.webp')",
         'action3': "url('/assets/page.jpeg')",
         'abrigo': "url('/assets/abrigo2.jpg')",
+        'nascer': "url('/assets/nascer.jpg')",
       }
     },
   },
