@@ -14,9 +14,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
 
     <title>We Give For Free</title>
-    <link rel="stylesheet" crossorigin href="/assets/main-COPjqMxr.css">
+    <script type="module" crossorigin src="./assets/main-CFEmk7n0.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-CJMv5fYb.css">
   </head>
   <body class="bg-gray-200">
 
@@ -27,7 +32,7 @@
         <div class="flex items-center gap-5">
           <a href="./index.html">
             <img
-              src="/assets/imagem-1-ByPFlS93.jpeg"
+              src="./assets/imagem-1-ByPFlS93.jpeg"
               alt="logo"
               class="w-16 h-16 rounded-full"
             />
@@ -90,41 +95,18 @@
                   >Home</a
                 >
               </li>
-  
-              <li>
-                <div class="relative inline-block text-left">
-                  <!--Botão Dropdown-->
-                  <button
-                    id="mobile-button"
-                    class="hover:text-gray-300 duration-300 text-lg"
-                  >
-                    Cadastro
-                  </button>
-  
-                  <!--menu do Dropdown-->
-                  <div
-                    id="mobile-drop"
-                    class="hidden w-full origin-top-right absolute right-0 mt-2"
-                  >
-                    <div class="w-28 h-full bg-slate-600">
-                      <a
-                        href="./instituicao.html"
-                        class="block px-4 py-2 text-lg text-gray-400 hover:text-gray-100"
-                        >Instituição</a
-                      >
-                      <a
-                        href="./professor.html"
-                        class="block px-4 py-2 text-lg text-gray-400 hover:text-gray-100"
-                        >Professor</a
-                      >
-                    </div>
-                  </div>
-                </div>
+
+              <li class="">
+                <a
+                  href="#formularioRodape"
+                  class="text-lg block sm:inline-block whitespace-nowrap hover:text-gray-100 duration-300"
+                  >Cadastro</a
+                >
               </li>
-  
+    
               <li>
                 <a
-                  href="#"
+                  href="#sobre"
                   class="text-lg block sm:inline-block whitespace-nowrap hover:text-gray-100 duration-300"
                   >Sobre Nós</a
                 >
@@ -138,11 +120,11 @@
 
 
     <!--Cabeçalho-->
-    <header class="hidden sm:flex w-full justify-between bg-slate-900">
+    <header class="hidden sm:flex fixed w-full justify-between bg-slate-900">
       <div class="w-full flex gap-5 items-center py-2 ml-5">
         <a href="./index.html">
           <img
-            src="/assets/imagem-1-ByPFlS93.jpeg"
+            src="./assets/imagem-1-ByPFlS93.jpeg"
             alt="logo"
             class="w-16 h-16 rounded-full"
           />
@@ -162,61 +144,182 @@
           >
         </li>
 
-        <li>
-          <div class="relative inline-block text-left">
-            <div>
-              <button
-                type="button"
-                id="drop-down"
-                class="hover:text-gray-300 lg:text-lg"
-                aria-expanded="true"
-                aria-haspopup="true"
-              >
-                Cadastro
-              </button>
-            </div>
-            <div
-              id="drop-menu"
-              class="origin-top-right absolute right-0 hidden bg-slate-900"
-            >
-              <div
-                class="py-0"
-                role="menu"
-                aria-orientation="vertical"
-                aria-labelledby="options-menu"
-              >
-                <a
-                  href="./instituicao.html"
-                  class="block px-4 py-4 text-sm text-gray-400 font-semibold hover:text-gray-100"
-                  >Instituição</a
-                >
-                <a
-                  href="./professor.html"
-                  class="block px-4 py-2 text-sm text-gray-400 font-semibold hover:text-gray-100"
-                  >Professor</a
-                >
-              </div>
-            </div>
-          </div>
+        <li class="">
+          <a
+            href="#formularioRodape"
+            class="text-lg block sm:inline-block whitespace-nowrap hover:text-gray-100 duration-300"
+            >Cadastro</a
+          >
         </li>
 
         <li>
           <a
-            href="#"
+            href="#sobre"
             class="text-lg block sm:inline-block whitespace-nowrap hover:text-gray-100 duration-300"
             >Sobre Nós</a
           >
         </li>
       </ul>
     </header>
-
     <!--Fim cabeçalho-->
 
-
     <!--Inicio do meu contúdo-->
-      <section class="h-screen">
+    <main class="w-full">
+      <div  class="w-full">
+        <section class="">
+          <div class="w-full h-[600px] bg-action3 bg-no-repeat bg-cover">
+
+          </div>
+        </section>
+        <section>
         
+        <!--criar uma call action-->
+        <section>
+          <div class="w-full bg-slate-950 p-5">
+            <div class="w-full flex flex-col items-center">
+              <h2 class="text-white text-2xl font-bold">Como você pode ajudar?</h2>
+              <p class="text-white text-lg">Seja um voluntário</p>
+              <a href="#contatoForm">
+                
+                <button
+                  class="bg-green-500 text-white px-5 py-2 rounded-md mt-3"
+                >
+                  Cadastre-se
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!--Fim da call action-->
+
+      <section class="w-full bg-gray-100 p-5">
+        <div class="w-full flex flex-col items-center text-center">
+          <h2 class="text-3xl font-bold text-slate-900">O que você faria se você fosse um super herói?</h2>
+          <h2 class="text-3xl font-bold text-slate-900 mt-4">O que você faria se pudesse mudar o mundo?</h2>
+          <h2 class="text-3xl font-bold text-slate-900 mt-4">Você pode ser um super herói, você pode mudar o mundo!</h2>
+          <p class="text-lg text-slate-700 mt-4">
+            Venha fazer parte da transformação do mundo, de jovens e adolescentes.
+          </p>
+          <p class="text-lg text-slate-700 mt-2">
+            Venha ser o super herói, e impactar a vida desses jovens por meio da educação.
+          </p>
+        </div>
       </section>
+      <!--Fim do hero-->
+
+      <section class="w-full bg-gray-100 p-5">
+        <div class="w-full flex flex-col items-center text-center">
+          <h2 class="text-3xl font-bold text-slate-900">Conheça um pouco nossa realidade</h2>
+          <div class="w-full flex justify-center items-center flex-col mt-2">
+            
+            <div class="bg-abrigo bg-no-repeat bg-cover w-full sm:w-4/5 h-96">
+          
+            </div>
+            <div class="w-full flex flex-col justify-center items-center h-auto sm:w-4/5 bg-orange-300 overflow-auto">              
+          
+              <p class="text-lg flex text-slate-700 w-4/5 mt-4">
+              Em 2023, cerca de 32 mil crianças e adolescentes viviam em abrigos no Brasil.
+              Os principais motivos para a permanência em abrigos são abandono, violência e vulnerabilidade.
+              86% das crianças que vivem em abrigos não podem ser adotadas por não terem passado pelo processo.
+              O ECA estabelece que as entidades de abrigo devem colocar as crianças e adolescentes em família substituta quando os recursos de manutenção na família de origem forem esgotados.
+              O futuro de jovens egressos dos serviços de acolhimento é incerto.
+              Em 2019, havia poucas vagas para um grande contingente de jovens.
+              Muitos jovens egressos dos serviços de acolhimento vão parar nas ruas.
+              Outras informações sobre a realidade de crianças e adolescentes no Brasil incluem:
+              45,4% de crianças de 0 a 14 anos vivem em situação de pobreza.
+              4,6% da população de 0 a 14 anos está em situação de trabalho infantil.
+              </p>
+              <div class="mb-5">
+                <a href="https://gife.org.br/futuro-de-jovens-egressos-dos-servicos-de-acolhimento-e-incerto-no-brasil/" target="_blank">
+                  <button
+                  class="bg-green-500 text-white px-5 py-2 rounded-md mt-3"
+                >
+                  Leia mais....
+                </button>
+                </a>
+              </div>
+            </div>
+          
+          </div>
+          </div>
+        </section>
+
+        <section class="w-full bg-gray-100 p-5">
+          <div class="w-full flex flex-col items-center text-center">
+            <h2 class="text-3xl font-bold text-slate-900">Conheça Alguns Abrigos de Manaus</h2>
+            <div class="w-full flex justify-center items-center flex-col mt-2">
+
+              <!--cria alguns card com abrigos-->
+            <div class="w-full flex flex-wrap justify-center gap-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                  <img src="./assets/abrigo-Cd86GP8l.jpeg" alt="Abrigo 1" class="w-full h-48 object-cover">
+                  <div class="p-5">
+                    <h3 class="text-xl font-bold text-slate-900">Abrigo Coração do Pai</h3>
+                    <p class="text-slate-700 mt-2">O Abrigo Coração do Pai é um instrumento de amor e preocupação de Deus para crianças e famílias em risco social. Atendendo crianças de 0 a 18 anos, o abrigo busca soluções a longo prazo para elas e suas famílias. Além disso, ajuda a comunidade com a entrega de complementos alimentares para famílias cadastradas e planeja iniciar aulas de reforço para crianças e alfabetização para adultos.</p>
+                    <div class="">
+                      <a href="http://www.ocoracaodopai.org/" target="_blank">
+                        <button
+                        class="bg-green-500 text-white px-5 py-2 rounded-md mt-3"
+                      >
+                        Leia mais....
+                      </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                  <img src="./assets/nascer-0wSzVqSw.jpg" alt="Abrigo 1" class="w-full h-48 object-cover">
+                  <div class="p-5">
+                    <h3 class="text-xl font-bold text-slate-900">Abrigo Nacer</h3>
+                    <p class="text-slate-700 mt-2">Uma associação dedicada à assistência de crianças e adolescentes, juntamente com suas mães, que se encontram em regime de abrigo ou do programa de acolhimento familiar. Além disso, também temos um compromisso firme com o serviço de  abordagem social para indivíduos em situação de rua e famílias em situação de vulnerabilidade. Através de nossos esforços, buscamos proporcionar um ambiente seguro e acolhedor, promovendo o bem-estar e a inclusão social para todos os que atendemos.</p>
+                    <div class="">
+                      <a href="https://nacer.org.br/" target="_blank">
+                        <button
+                        class="bg-green-500 text-white px-5 py-2 rounded-md mt-3"
+                      >
+                        Leia mais....
+                      </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                  <img src="./assets/lar-batista-DBMGSroG.webp" alt="Abrigo 1" class="w-full h-48 object-cover">
+                  <div class="p-5">
+                    <h3 class="text-xl font-bold text-slate-900">Lar Batista Janell Doyle</h3>
+                    <p class="text-slate-700 mt-2">O Lar Batista Janell Doyle é uma Organização da Sociedade Civil - OSC, de natureza beneficente, sem fins lucrativos, que atua como Acolhimento Institucional e Familiar para crianças e adolescentes, como também Serviço de Convivência e Fortalecimento de Vínculos para as famílias da comunidade do Mauazinho e Abordagem Social que identifica indivíduos em situação de risco pessoal e social em espaços públicos. Filiada a Convenção Batista do Amazonas. Inaugurada em 12 de Outubro de 1996.</p>
+                    <div class="">
+                      <a href="https://www.larbatistamanaus.org/sobre" target="_blank">
+                        <button
+                        class="bg-green-500 text-white px-5 py-2 rounded-md mt-3"
+                      >
+                        Leia mais....
+                      </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            
+          </section>
+
+          <!--sessão sobres nós-->
+            <section id="sobre" class="mt-5">
+            <div class="w-full bg-gray-100 p-5">
+              <div class="w-full flex flex-col items-center text-center lg:w-2/3 lg:mx-auto">
+              <h2 class="text-3xl font-bold text-slate-900">Sobre Nós</h2>
+              <p class="text-lg text-slate-700 mt-4">
+                A We Give For Free é uma organização sem fins lucrativos, nascemos através de um projeto de extensão da faculdade, temos como objetivo ajudar jovens e adolescentes através da educação técnica de qualidade. Acreditamos que a educação é a chave para transformar a vida desses jovens.
+              </p>
+              <p class="text-lg text-slate-700 mt-2">
+                Nossa missão é promover a inclusão social e a igualdade de oportunidades para jovens e adolescentes, por meio de projetos educacionais e sociais que visam o desenvolvimento integral desses jovens, dando a oportunidade de verem o mundo com outra perspectiva, um mundo onde eles podem sonhar com o futuro, não apenas sonhar mas realizar cada sonho.
+              </p>
+              </div>
+            </div>
+            </section>
+
+    </main>
 
       <!--Fim do meu conteúdo-->
 
@@ -263,28 +366,28 @@
         <div class="col-span-1">
           <h3 class="text-white font-bold">Tecnologia</h3>
           <div class="py-3 flex flex-col gap-2">
-            <a href="#">
+            <a href="https://www.python.org/" target="_blank">
               <span
                 class="text-gray-400 hover:text-gray-300 duration-300 font-semibold text-sm"
                 >Python</span
               >
             </a>
 
-            <a href="#">
+            <a href="https://www.oracle.com/java/technologies/downloads/?er=221886" target="_blank">
               <span
                 class="text-gray-400 hover:text-gray-300 duration-300 font-semibold text-sm"
                 >Java</span
               >
             </a>
 
-            <a href="#">
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
               <span
                 class="text-gray-400 hover:text-gray-300 duration-300 font-semibold text-sm"
                 >JavaScript</span
               >
             </a>
 
-            <a href="#">
+            <a href="https://nodejs.org/pt" target="_blank">
               <span
                 class="text-gray-400 hover:text-gray-300 duration-300 font-semibold text-sm"
                 >NodeJs</span
@@ -295,14 +398,38 @@
 
         <div class="col-span-1">
           <h3 class="text-white font-bold">Abrigos</h3>
-          <div class="py-3">
-            <a href="#">
+          <div class="py-3 flex flex-col gap-2">
+            <a href="http://www.ocoracaodopai.org/" target="_blank">
               <span
                 class="text-gray-400 hover:text-gray-300 duration-300 font-semibold text-sm"
                 >Coração do Pai</span
               >
             </a>
+
+            <a href="https://nacer.org.br/" target="_blank">
+              <span
+                class="text-gray-400 hover:text-gray-300 duration-300 font-semibold text-sm"
+                >Nacer</span
+              >
+            </a>
+
+            <a href="http://abrigomoacyralves.org/"  target="_blank">
+              <span
+                class="text-gray-400 hover:text-gray-300 duration-300 font-semibold text-sm"
+                >Moacyr Alves</span
+              >
+            </a>
+
+            <a href="https://www.larbatistamanaus.org/sobre" target="_blank">
+              <span
+                class="text-gray-400 hover:text-gray-300 duration-300 font-semibold text-sm"
+                >Lar Batista Janell Doyle</span
+              >
+            </a>
+
           </div>
+
+          
         </div>
 
         <div class="col-span-1">
@@ -312,12 +439,12 @@
       </div>
 
       <hr class="border-1 border-slate-800 mb-4" />
-      <div class="flex flex-col lg:flex-row lg:justify-between gap-2">
+      <div class="flex flex-col lg:flex-row lg:justify-between">
         <div class="flex flex-col gap-y-4">
           <div class="col-span-1">
             <p class="text-white flex gap-2 items-center text-xs">
               <img
-                src="/assets/imagem-1-ByPFlS93.jpeg"
+                src="./assets/imagem-1-ByPFlS93.jpeg"
                 alt="logo"
                 class="h-10 w-10 rounded-full"
               />We Give For Free &copy; 2024 Todos os direitos reservados
@@ -337,8 +464,52 @@
           </div>
         </div>
 
-        <div class="">
-          <h3 class="text-white text-xs font-bold">Seguir a We Give For Free</h3>
+        <div id="formularioRodape" class="w-full">
+          <form id="contatoForm">
+            <div class="flex justify-center">
+              <input autocomplete="off" type="text" required placeholder="Nome completo" id="nome" 
+                     class="block w-full sm:w-96 bg-slate-900 rounded-md border-0 py-2 px-3 mt-3 text-gray-400 shadow-sm 
+                     ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 pl-3 focus:outline-none 
+                     focus:ring-2 focus:ring-inset focus:ring-blue-700 sm:text-sm sm:leading-6">
+            </div>
+            <div class="flex justify-center">
+              <input autocomplete="off" type="text" required placeholder="Assunto" id="assunto" 
+                     class="block w-full sm:w-96 bg-slate-900 rounded-md border-0 py-2 px-3 mt-3 text-gray-400 shadow-sm 
+                     ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 pl-3 focus:outline-none 
+                     focus:ring-2 focus:ring-inset focus:ring-blue-700 sm:text-sm sm:leading-6">
+            </div>
+            <div class="flex justify-center">
+              <input autocomplete="off" type="email" required placeholder="Seu email" id="email" 
+                     class="block w-full sm:w-96 bg-slate-900 rounded-md border-0 py-2 px-3 mt-3 text-gray-400 shadow-sm 
+                     ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 pl-3 focus:outline-none 
+                     focus:ring-2 focus:ring-inset focus:ring-blue-700 sm:text-sm sm:leading-6">
+            </div>
+            <div class="w-full flex justify-center">
+              <textarea cols="40" rows="10" placeholder="Digite a sua mensagem" required id="mensagem" 
+                        class="block w-full mt-3 sm:w-96 bg-slate-900 rounded-md border-0 py-2 px-3 text-gray-400 shadow-sm 
+                        ring-1 ring-inset ring-slate-700 placeholder:text-gray-400 pl-3 focus:outline-none 
+                        focus:ring-2 focus:ring-inset focus:ring-blue-700 sm:text-sm sm:leading-6"></textarea>
+            </div>
+            <div class="w-full flex justify-center">
+              <button type="submit" id="btn-button" 
+                      class="w-full py-1.5 rounded-md sm:w-96 mt-3 bg-blue-700 hover:bg-blue-800 active:bg-blue-900 
+                      focus:outline-none focus:ring focus:ring-blue-700 duration-300">
+                Enviar
+              </button>
+            </div>
+            
+            <div id="content" class="w-full flex justify-center">
+
+
+            </div>
+          </form>
+        </div>
+        
+
+        
+
+        <div class="mt-3 sm:m-0">
+            <h3 class="text-white text-xs font-bold whitespace-nowrap">Seguir a We Give For Free</h3>
           <div class="flex gap-5 py-3">
             <div class="col-span-1">
               <a href="#"
@@ -369,5 +540,5 @@
     </footer>
     <!--Fim roda pé-->
   </body>
-  <script src="./main.js"></script>
+
 </html>
