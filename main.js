@@ -45,4 +45,16 @@ document.addEventListener("DOMContentLoaded", function () {
     menuMobile.classList.add('hidden');
   });
 });
+// Evento para fechar o menu ao clicar fora dele
+document.addEventListener("click", function(event) {
+  const menuMobile = document.getElementById('menu');
+  const menuAbrir = document.getElementById('btn-open');
+  const menuFechar = document.getElementById('btn-close');
+  
+  if (!menuMobile.contains(event.target) && !menuAbrir.contains(event.target) && !menuFechar.contains(event.target)) {
+    console.log("Clicou fora do menu, fechando...");
+    menuMobile.classList.remove('flex');
+    menuMobile.classList.add('hidden');
+  }
+});
 
